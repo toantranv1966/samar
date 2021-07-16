@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samar -- Bài tập HTML5-CSS3</title>
+
+    <!-- Mục tiêu của bài tập
+        1, Hiểu & sử dụng cấu trúc thẻ HTML5
+        2, Nắm được các thuộc tính cơ bản CSS3
+        3, Cách cài đặt thư viện
+        4, Cách sử dụng thư viện
+        5, Cách cài đặt các loại font -->
+
+
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- LINK FLATICON -->
+    <link rel="stylesheet" href="./icon/flaticon.css">
+    <!-- FONTAWASOME -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <!-- Line awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- FANCYBOX CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+
+    <!-- Slick -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Owl-Carousel -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <!-- LightGallery -->
+
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/css/lightgallery-bundle.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./CSS/base.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body id="bg">
+    <!-- HEADER -->
+    <header>
+        <div class="header__content">
+            <div class="header__logo">
+                <a href="#"><img src="./IMG/logo-2.png" alt="logo"></a>
+
+            </div>
+            <nav class="navbar">
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="#">
+                            <span class="navbar__item-text">Home</span>
+                            <i class="navbar__item-icon fas fa-chevron-down"></i>
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#">
+                            <span class="navbar__item-text">Pages</span>
+                            <i class="navbar__item-icon fa fa-chevron-down"></i>
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#">
+                            <span class="navbar__item-text">Services</span>
+                            <i class="navbar__item-icon fa fa-chevron-down"></i>
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#">
+                            <span class="navbar__item-text">Post Layout</span>
+                            <i class="navbar__item-icon fa fa-chevron-down"></i>
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#">
+                            <span class="navbar__item-text">Blog</span>
+                            <i class="navbar__item-icon fa fa-chevron-down"></i>
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#">
+                            <span class="navbar__item-icon navbar__item-text">Contact Us</span>
+                            <i class="fa fa-chevron-down"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="btn"><a href="#">get a qoute</a></div>
+            </nav>
+
+        </div>
+        </div>
+    </header>
+    <!-- HEADER -->
+
+    <div class="bg-white">
+        <!-- CAROUSEL -->
+        <section class="carousel"
+            style="background-image:url(images/main-slider/slider2/pic2.png);background-repeat:no-repeat;background-position:top;background-size:100%;">
+            <div class="carousel__content">
+                <div class="carousel__grid">
+                    <div class="carousel__item">
+                        <h6>We are The Best</h6>
+                        <h1>Freelance Product Designer Running</h1>
+                        <p>We develop the relationships that underpin the next
+                            phase in your <br /> organisation’s growth.</p>
+                        <ul>
+                            <li>Master's degree in designing</li>
+                            <li>Outstanding mobile design</li>
+                        </ul>
+                        <a href="#" class="btn">GET STARTED</a>
+                    </div>
+                    <div class="carousel__media">
+                        <img src="images/main-slider/slider2/pic3.png" alt="pic3" />
+                        <div class="move-2">
+                            <img src="images/main-slider/slider2/pic1.png" alt="pic1" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- END CAROUSEL -->
+
+        <!-- SERVICES -->
+        <section class="services"
+            style="background-image: url(images/background/bg2.png); background-size: cover; background-position: top center; background-repeat: no-repeat;">
+            <div class="services__content">
+                <div class="services-head text-center">
+                    <h6 class="sub-title text-primary">What We Do Best</h6>
+                    <h2 class="title">Our Digital Services</h2>
+                </div>
+                <div class="row">
+                    <div class="row__item ">
+                        <div class="icon-bx-wraper text-center">
+                            <div class="icon-media">
+                                <img src="images/services/pic1_3.jpg" width="215" alt="">
+                            </div>
+                            <div class="icon-content">
+                                <h4 class="dlab-title">Web Development</h4>
+                                <p>Vestibulum a efficitur ex. Ut iaculis dapibus iaculis. Praesent lacus magna, rhoncus
+                                    quis
+                                    magna quis.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row__item ">
+                        <div class="icon-bx-wraper text-center">
+                            <div class="icon-media">
+                                <img src="images/services/pic1_3.jpg" width="215" alt="">
+                            </div>
+                            <div class="icon-content">
+                                <h4 class="dlab-title">Strategy &amp; Research</h4>
+                                <p>Vestibulum a efficitur ex. Ut iaculis dapibus iaculis. Praesent lacus magna, rhoncus
+                                    quis
+                                    magna quis.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row__item ">
+                        <div class="icon-bx-wraper text-center ">
+                            <div class="icon-media">
+                                <img src="images/services/pic6_1.jpg" width="215" alt="">
+                            </div>
+                            <div class="icon-content">
+                                <h4 class="dlab-title">Growth Tracking</h4>
+                                <p>Vestibulum a efficitur ex. Ut iaculis dapibus iaculis. Praesent lacus magna, rhoncus
+                                    quis
+                                    magna quis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END SERVICES -->
+
+        <!-- ABOUT US -->
+
+        <section class="content-inner about-wraper-1"
+            style="background-image: url(images/background/bg15.png); background-size: contain; background-position: center right; background-repeat: no-repeat;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 m-b30 wow fadeInLeft">
+                        <div class="dz-media left">
+                            <img src="images/about/pic1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 m-b30 wow fadeInRight">
+                        <div class="section-head style-1">
+                            <h6 class="sub-title text-primary m-b15">About Us</h6>
+                            <h2 class="title m-b20">Build Your Business Website Better</h2>
+                            <p>Proin laoreet leo vel enim gravida, at porttitor metus ultricies. Cras eu velit enim.
+                                Vivamus blandit, dolor ut aliquet rutrum, ex elit mattis sapien, non molestie felis
+                                neque et nulla. Sed euismod turpis id nibh suscipit semper. Pellentesque dapibus risus
+                                arcu.</p>
+                        </div>
+                        <ul class="list-check primary m-b30">
+                            <li>We support programs that create advancement opportunities for people.</li>
+                            <li>Get a view of events and trends. Be updated on our recent news.</li>
+                            <li>Finally, it all comes down to people. Creating a winning team.</li>
+                            <li>Get a view of events and trends. Be updated on our recent news.</li>
+                        </ul>
+                        <a href="about-us-1.html" class="btn btn-primary rounded-xl gradient">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NUMBER -->
+
+        <section class="number"
+            style="background-image: url(images/background/bg14.png); background-position: center; background-repeat: no-repeat;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 m-b30 col-6">
+                        <div class="dlab-content-bx style-3 text-center">
+                            <div class="icon-bx-sm radius">
+                                <span class="icon-cell">
+                                    <i class="flaticon-smile"></i>
+                                </span>
+                            </div>
+                            <div class="icon-content">
+                                <h2 class="m-b0 text-primary"><span class="counter m-r5">18</span>Ml</h2>
+                                <span class="title">Satisfied Clients</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 m-b30 col-6">
+                        <div class="dlab-content-bx style-3 text-center">
+                            <div class="icon-bx-sm radius">
+                                <span class="icon-cell">
+                                    <i class="flaticon-line-chart"></i>
+                                </span>
+                            </div>
+                            <div class="icon-content">
+                                <h2 class="m-b0 text-primary"><span class="counter m-r5">20</span>Ml</h2>
+                                <span class="title">Project Completed</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 m-b30 col-6">
+                        <div class="dlab-content-bx style-3 text-center">
+                            <div class="icon-bx-sm radius">
+                                <span class="icon-cell">
+                                    <i class="flaticon-startup"></i>
+                                </span>
+                            </div>
+                            <div class="icon-content">
+                                <h2 class="m-b0 text-primary"><span class="counter m-r5">30</span>Ml</h2>
+                                <span class="title">Project Lunched</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 m-b30 col-6">
+                        <div class="dlab-content-bx style-3 text-center">
+                            <div class="icon-bx-sm radius">
+                                <span class="icon-cell">
+                                    <i class="flaticon-confetti"></i>
+                                </span>
+                            </div>
+                            <div class="icon-content">
+                                <h2 class="m-b0 text-primary"><span class="counter m-r5">50</span></h2>
+                                <span class="title">Years Completed</span>
+                                <p class="counter"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="number"></section> -->
+
+        <!-- Features -->
+        <section class="feature"
+            style="background-image: url(images/background/bg2.png); background-size: contain; background-position: center; background-repeat: no-repeat;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
+                        <div class="section-head style-1">
+                            <h6 class="sub-title text-primary m-b15">Our Features</h6>
+                            <h2 class="title">Behind The Story Of Samar Agency</h2>
+                        </div>
+                        <div class="icon-bx-wraper2 style-3 left box-hover m-r50 m-b30 wow fadeInRight">
+                            <div class="icon-bx-sm radius">
+                                <a href="javascript:void(0);" class="icon-cell">
+                                    <i class="flaticon-idea"></i>
+                                </a>
+                            </div>
+                            <div class="icon-content">
+                                <h4 class="dlab-title m-b10">Idea & Analysis Gathering</h4>
+                                <p>Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet consequat
+                                    augue.</p>
+                            </div>
+                        </div>
+                        <div class="icon-bx-wraper2 style-3 left box-hover active m-l50 m-b30 wow fadeInRight">
+                            <div class="icon-bx-sm radius">
+                                <a href="javascript:void(0);" class="icon-cell">
+                                    <i class="flaticon-coding"></i>
+                                </a>
+                            </div>
+                            <div class="icon-content">
+                                <h4 class="dlab-title m-b10">Design & Developing</h4>
+                                <p>Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet consequat
+                                    augue.</p>
+                            </div>
+                        </div>
+                        <div class="icon-bx-wraper2 style-3 left box-hover m-r50 m-b30 wow fadeInRight">
+                            <div class="icon-bx-sm radius">
+                                <a href="javascript:void(0);" class="icon-cell">
+                                    <i class="flaticon-rocket"></i>
+                                </a>
+                            </div>
+                            <div class="icon-content">
+                                <h4 class="dlab-title m-b10">Testing & Lunching</h4>
+                                <p>Maecenas laoreet efficitur sagittis. Aliquam eleifend nisl leo, sit amet consequat
+                                    augue.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="cf-r-img d-lg-block d-none">
+                            <img src="images/about/pic3.png" class="move-2" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- End Features -->
+
+        <!-- WORK -->
+
+        <section class="work"
+            style="background-image: url(./images/background/bg17.png); background-size: cover; background-position: top center; background-repeat: no-repeat;">
+            <div class="container">
+                <div class="section-head style-1 text-center">
+                    <h6 class="sub-title text-primary m-b15">Portfolio</h6>
+                    <h2 class="title">Our Latest Work</h2>
+                </div>
+                <div class="work_content">
+                    <div class="work__grid">
+                        <div class="work__item work__item1">
+                            <img src="./images/projects/project-2/pic1.jpg" alt="">
+
+                            <div class="work__overlay">
+                                <div class="work__icon" id="animated-thumbnails">
+                                    <span data-exthumbimage="images/projects/project-2/pic1.jpg"
+                                        data-src="images/projects/project-2/pic1.jpg" class="lightimg" title="Design">
+                                        <i class="la la-plus"></i>
+                                    </span>
+
+
+                                </div>
+                                <div class="work__name">
+                                    <h5 class="title"><a href="#">Software Landing</a></h5>
+                                    <p class="post-author">By <a href="#">Jhone Doe</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work__item work__item2 effect2">
+                            <img src="./images/projects/project-2/pic2.jpg" alt="">
+                            <div class="work__overlay dlab-img-overlay1">
+                                <div class="work__icon" id="animated-thumbnails">
+                                    <span data-exthumbimage="images/projects/project-2/pic2.jpg"
+                                        data-src="images/projects/project-2/pic2.jpg" class="lightimg" title="Design">
+                                        <i class="la la-plus"></i>
+                                    </span>
+
+
+                                </div>
+                                <div class="work__name">
+                                    <h5 class="title"><a href="#">Software Landing</a></h5>
+                                    <p class="post-author">By <a href="#">Jhone Doe</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work__item effect2">
+                            <img src="./images/projects/project-2/pic3.jpg" alt="">
+                            <div class="work__overlay">
+                                <div class="work__icon" id="animated-thumbnails">
+                                    <span data-exthumbimage="images/projects/project-2/pic1.jpg"
+                                        data-src="images/projects/project-2/pic1.jpg" class="lightimg" title="Design">
+                                        <i class="la la-plus"></i>
+                                    </span>
+
+                                </div>
+                                <div class="work__name">
+                                    <h5 class="title"><a href="#">Software Landing</a></h5>
+                                    <p class="post-author">By <a href="#">Jhone Doe</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work__item">
+                            <img src="./images/projects/project-2/pic4.jpg" alt="">
+                            <div class="work__overlay">
+                                <div class="work__icon" id="animated-thumbnails">
+                                    <span data-exthumbimage="images/projects/project-2/pic1.jpg"
+                                        data-src="images/projects/project-2/pic1.jpg" class="lightimg" title="Design">
+                                        <i class="la la-plus"></i>
+                                    </span>
+
+                                </div>
+                                <div class="work__name">
+                                    <h5 class="title"><a href="#">Software Landing</a></h5>
+                                    <p class="post-author">By <a href="#">Jhone Doe</a></p>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work__item work__item5 ">
+                            <img src="./images/projects/project-2/pic6.jpg" alt="">
+                            <div class="work__overlay">
+                                <div class="work__icon" id="animated-thumbnails">
+                                    <span data-exthumbimage="images/projects/project-2/pic1.jpg"
+                                        data-src="images/projects/project-2/pic1.jpg" class="lightimg" title="Design">
+                                        <i class="la la-plus"></i>
+                                    </span>
+
+                                </div>
+                                <div class="work__name">
+                                    <h5 class="title"><a href="#">Software Landing</a></h5>
+                                    <p class="post-author">By <a href="#">Jhone Doe</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work__item work__item6">
+                            <img src="./images/projects/project-2/pic5.jpg" alt="">
+                            <div class="work__overlay">
+                                <div class="work__icon" id="animated-thumbnails">
+                                    <span data-exthumbimage="images/projects/project-2/pic1.jpg"
+                                        data-src="images/projects/project-2/pic1.jpg" class="lightimg" title="Design">
+                                        <i class="la la-plus"></i>
+                                    </span>
+
+                                </div>
+                                <div class="work__name">
+                                    <h5 class="title"><a href="#">Software Landing</a></h5>
+                                    <p class="post-author">By <a href="#">Jhone Doe</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- END WORK -->
+
+        <!-- PLAN -->
+
+        <section class="plan"
+            style="background-image: url(images/background/bg16.png); background-size: cover; background-position: center; background-repeat: no-repeat;">
+            <div class="plan__container">
+                <div class="section-head style-1 text-center mb-3">
+                    <h6 class="sub-title m-b15 text-primary">Choose Your Plan</h6>
+                    <h2 class="title">Choose Your Plan</h2>
+                </div>
+                <div class="toggle-tabs">
+                    <span class="monthly">Monthly</span>
+                    <span class="yearly">Yearly</span>
+                </div>
+                <div class="pricingtable-row">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
+                            <div class="pricingtable-wrapper style-2 m-md-b30">
+                                <div class="pricingtable-inner">
+                                    <div class="pricingtable-title">
+                                        <h3>Basic Plan</h3>
+                                    </div>
+                                    <div class="pricingtable-media m-b15">
+                                        <img src="images/services/pic1_3.jpg" width="125" alt="" />
+                                    </div>
+                                    <div class="pricingtable-price">
+                                        <h2 class="pricingtable-bx">$49<small class="pricingtable-type">/Month</small>
+                                        </h2>
+                                    </div>
+                                    <ul class="pricingtable-features">
+                                        <li>Graphic Design </li>
+                                        <li>Web Design</li>
+                                        <li>UI/UX</li>
+                                        <li>HTML/CSS</li>
+                                        <li>SEO Marketing</li>
+                                        <li>Business Analysis</li>
+                                    </ul>
+                                    <div class="pricingtable-footer">
+                                        <a href="pricing-table-1.html"
+                                            class="btn btn-primary gradient shadow rounded-xl">Start Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.4s">
+                            <div class="pricingtable-wrapper style-2 active m-md-b30">
+                                <div class="pricingtable-inner">
+                                    <div class="pricingtable-title">
+                                        <h3>Standart Plan</h3>
+                                    </div>
+                                    <div class="pricingtable-media m-b15">
+                                        <img src="images/services/pic2_2.jpg" width="125" alt="" />
+                                    </div>
+                                    <div class="pricingtable-price">
+                                        <h2 class="pricingtable-bx">$99<small class="pricingtable-type">/Month</small>
+                                        </h2>
+                                    </div>
+                                    <ul class="pricingtable-features">
+                                        <li>Graphic Design </li>
+                                        <li>Web Design</li>
+                                        <li>UI/UX</li>
+                                        <li>HTML/CSS</li>
+                                        <li>SEO Marketing</li>
+                                        <li>Business Analysis</li>
+                                    </ul>
+                                    <div class="pricingtable-footer">
+                                        <a href="pricing-table-1.html"
+                                            class="btn btn-primary gradient shadow rounded-xl">Start Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.6s">
+                            <div class="pricingtable-wrapper style-2">
+                                <div class="pricingtable-inner">
+                                    <div class="pricingtable-title">
+                                        <h3>Premium Plan</h3>
+                                    </div>
+                                    <div class="pricingtable-media m-b15">
+                                        <img src="images/services/pic6_1.jpg" width="125" alt="" />
+                                    </div>
+                                    <div class="pricingtable-price">
+                                        <h2 class="pricingtable-bx">$149<small class="pricingtable-type">/Month</small>
+                                        </h2>
+                                    </div>
+                                    <ul class="pricingtable-features">
+                                        <li>Graphic Design </li>
+                                        <li>Web Design</li>
+                                        <li>UI/UX</li>
+                                        <li>HTML/CSS</li>
+                                        <li>SEO Marketing</li>
+                                        <li>Business Analysis</li>
+                                    </ul>
+                                    <div class="pricingtable-footer">
+                                        <a href="pricing-table-1.html"
+                                            class="btn btn-primary gradient shadow rounded-xl">Start Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- END PLAN -->
+
+        <!-- CLIENT -->
+        <section class="client">
+            <div class="section-head style-1 text-center">
+                <h6 class="sub-title text-primary m-b15">Testimonial</h6>
+                <h2 class="title">What Our Clients Say’s</h2>
+            </div>
+            <div class="testimonial-content">
+                <!-- Swiper -->
+                <div class="swiper-container testimonial-thumbs">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="testimonial-pic">
+                        <img src="https://samar.dexignzone.com/xhtml/images/testimonials/pic1.jpg" alt="">
+                        <div class="shape-bx"></div>
+                      </div>
+            
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="testimonial-pic">
+                        <img src="https://samar.dexignzone.com/xhtml/images/testimonials/pic2.jpg" alt="">
+                        <div class="shape-bx"></div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="testimonial-pic">
+                        <img src="https://samar.dexignzone.com/xhtml/images/testimonials/pic3.jpg" alt="">
+                        <div class="shape-bx"></div>
+                      </div>
+                    </div>
+                  </div>
+            
+                </div>
+            
+                <div class="swiper-container testimonial-comment">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-4 quote-left">
+                            <div class="testimonial-text">
+                                <strong class="testimonial-name">Cak Dikin 1</strong>
+                                <span class="testimonial-position text-primary m-b20">CEO &amp; Founder </span>
+                                <p>Duis feugiat est tincidunt ligula maximus convallis. Aenean ultricies, mi non vestibulum auctor, erat
+                                  tortor porttitor ipsum, nec dictum tortor sem eget nunc. Etiam sed facilisis erat.</p>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-4 quote-left">
+                            <div class="testimonial-text">
+                                <strong class="testimonial-name">Cak Dikin 2</strong>
+                                <span class="testimonial-position text-primary m-b20">CEO &amp; Founder </span>
+                                <p>Duis feugiat est tincidunt ligula maximus convallis. Aenean ultricies, mi non vestibulum auctor, erat
+                                  tortor porttitor ipsum, nec dictum tortor sem eget nunc. Etiam sed facilisis erat.</p>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-4 quote-left">
+                            <div class="testimonial-text">
+                                <strong class="testimonial-name">Cak Dikin 3</strong>
+                                <span class="testimonial-position text-primary m-b20">CEO &amp; Founder </span>
+                                <p>Duis feugiat est tincidunt ligula maximus convallis. Aenean ultricies, mi non vestibulum auctor, erat
+                                  tortor porttitor ipsum, nec dictum tortor sem eget nunc. Etiam sed facilisis erat.</p>
+                              </div>
+                        </div>
+                      
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+        </section>
+        
+        <!-- END CLIENT -->
+
+        <!-- BLOG -->
+
+        <section class="blog">
+            <div class="section-head style-1 text-center">
+                <h6 class="sub-title text-primary m-b15">Our Blog</h6>
+                <h2 class="title">Latest News & Blog</h2>
+            </div>
+            <div class="slider owl-carousel">
+
+                <div class="card">
+                    <div class="img">
+                        <a href="#"><img src="./images/blog/blog-grid/pic1_1.jpg" alt=""></a>
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            <h4>
+                                <a href="#">Maecenas maximus augue eget libero dictum.</a>
+                            </h4>
+                            <p m-b20></p>Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam.
+                            Phasellus
+                            justo
+                            quam.</p>
+                            <div class="dlab-meta mb-0">
+                                <ul>
+                                    <li class="post-date">28 June 2021</li>
+                                    <li class="post-author"><i class="las la-user-circle"></i> By <a
+                                            href="javascript:void(0);">Johne Doe</a></li>
+                                    <li class="post-comment"><i class="las la-comment"></i> <a
+                                            href="javascript:void(0);">Comments<span>15</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- <div class="sub-title">Graphic Design</div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum natus nobis hic maiores odio
+                            voluptatem provident tempore, explicabo quo amet.</p>
+                        <div class="btn">
+                            <button>Read more</button>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <a href="#"><img src="./images/blog/blog-grid/pic2.jpg" alt=""></a>
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            <h4>
+                                <a href="#">Maecenas maximus augue eget libero dictum.</a>
+                            </h4>
+                            <p m-b20></p>Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam.
+                            Phasellus
+                            justo
+                            quam.</p>
+                            <div class="dlab-meta mb-0">
+                                <ul>
+                                    <li class="post-date">28 June 2021</li>
+                                    <li class="post-author"><i class="las la-user-circle"></i> By <a
+                                            href="javascript:void(0);">Johne Doe</a></li>
+                                    <li class="post-comment"><i class="las la-comment"></i> <a
+                                            href="javascript:void(0);">Comments<span>15</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- <div class="sub-title">Graphic Design</div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum natus nobis hic maiores odio
+                            voluptatem provident tempore, explicabo quo amet.</p>
+                        <div class="btn">
+                            <button>Read more</button>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <a href="#"><img src="./images/blog/blog-grid/pic3.jpg" alt=""></a>
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            <h4>
+                                <a href="#">Maecenas maximus augue eget libero dictum.</a>
+                            </h4>
+                            <p m-b20></p>Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam.
+                            Phasellus
+                            justo
+                            quam.</p>
+                            <div class="dlab-meta mb-0">
+                                <ul>
+                                    <li class="post-date">28 June 2021</li>
+                                    <li class="post-author"><i class="las la-user-circle"></i> By <a
+                                            href="javascript:void(0);">Johne Doe</a></li>
+                                    <li class="post-comment"><i class="las la-comment"></i> <a
+                                            href="javascript:void(0);">Comments<span>15</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- <div class="sub-title">Graphic Design</div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum natus nobis hic maiores odio
+                            voluptatem provident tempore, explicabo quo amet.</p>
+                        <div class="btn">
+                            <button>Read more</button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END BLOG -->
+
+        <!-- BRAND -->
+        <section class="brand">
+            <div class="brand__slider owl-carousel">
+                <div class="brand__card">
+                    <div class="brand__logo">
+                        <img class="logo-main" src="images/logo/logo-pink1.png" alt="">
+                        <img class="logo-hover" src="images/logo/logo-light1.png" alt="">
+                    </div>
+                </div>
+                <div class="brand__card">
+                    <div class="brand__logo">
+                        <img class="logo-main" src="images/logo/logo-pink2.png" alt="">
+                        <img class="logo-hover" src="images/logo/logo-light2.png" alt="">
+                    </div>
+                </div>
+                <div class="brand__card">
+                    <div class="brand__logo">
+                        <img class="logo-main" src="images/logo/logo-pink3.png" alt="">
+                        <img class="logo-hover" src="images/logo/logo-light3.png" alt="">
+                    </div>
+                </div>
+                <div class="brand__card">
+                    <div class="brand__logo">
+                        <img class="logo-main" src="images/logo/logo-pink4.png" alt="">
+                        <img class="logo-hover" src="images/logo/logo-light4.png" alt="">
+                    </div>
+                </div>
+                <div class="brand__card">
+                    <div class="brand__logo">
+                        <img class="logo-main" src="images/logo/logo-pink5.png" alt="">
+                        <img class="logo-hover" src="images/logo/logo-light5.png" alt="">
+                    </div>
+                </div>
+                <div class="brand__card">
+                    <div class="brand__logo">
+                        <img class="logo-main" src="images/logo/logo-pink6.png" alt="">
+                        <img class="logo-hover" src="images/logo/logo-light6.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- END BRAND -->
+
+        <section class="blog"></section>
+        <section class="brand"></section>
+        <section class="subscribe"></section>
+        <section class="contact"></section>
+
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer style-2" id="footer" style="background-image: url(images/background/bg4.png);">
+        <div class="container">
+            <div class="dlab-subscribe style-1 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h2 class="title">Subscribe To Our Newsletter</h2>
+                    </div>
+                    <div class="col-lg-6">
+                        <form class="dzSubscribe" action="script/mailchamp.php" method="post">
+                            <div class="dzSubscribeMsg"></div>
+                            <div class="form-group">
+                                <div class="input-group shadow">
+                                    <input name="dzEmail" required="required" type="email" class="form-control"
+                                        placeholder="Your Email Address">
+                                    <div class="input-group-addon">
+                                        <button name="submit" value="Submit" type="submit"
+                                            class="btn btn-primary gradient">
+                                            <i class="las la-paper-plane scale4"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
+                        <div class="widget widget_about">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="images/logo-white.png" alt="" /></a>
+                            </div>
+                            <div class="widget widget_getintuch">
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-phone gradient"></i>
+                                        <span>1800-123-4567<br />+91 987-654-3210</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-envelope gradient"></i>
+                                        <span>info@example.com <br />services@gmail.com</span>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-map-marker gradient"></i>
+                                        <span>Demo Address #8901 Marmora Road Chi Minh City, Vietnam</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-2 col-sm-6 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
+                        <div class="widget widget_services">
+                            <h5 class="footer-title">Our links</h5>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about-us-1.html">About Us</a></li>
+                                <li><a href="services-1.html">Services</a></li>
+                                <li><a href="team-1.html">Team</a></li>
+                                <li><a href="blog-grid-2.html">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-sm-6 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
+                        <div class="widget widget_services">
+                            <h5 class="footer-title">Our Services</h5>
+                            <ul>
+                                <li><a href="javascript:void(0);">Strategy & Research</a></li>
+                                <li><a href="javascript:void(0);">Web Development</a></li>
+                                <li><a href="javascript:void(0);">Web Solution</a></li>
+                                <li><a href="javascript:void(0);">Digital Marketing</a></li>
+                                <li><a href="javascript:void(0);">App Design </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-sm-6 wow fadeIn" data-wow-duration="2s" data-wow-delay="0.8s">
+                        <div class="widget widget_services">
+                            <h5 class="footer-title">Other links</h5>
+                            <ul>
+                                <li><a href="faq-1.html">FAQ</a></li>
+                                <li><a href="javascript:void(0);">Portfolio</a></li>
+                                <li><a href="javascript:void(0);">Privacy Policy</a></li>
+                                <li><a href="javascript:void(0);">Terms & Conditions</a></li>
+                                <li><a href="javascript:void(0);">Support </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer bottom part -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-7 text-left">
+                        <span class="copyright-text">Copyright © 2021 <a href="https://dexignzone.com/"
+                                target="_blank">DexignZone</a>. All rights reserved.</span>
+                    </div>
+                    <div class="col-lg-6 col-md-5 text-right">
+                        <div class="dlab-social-icon">
+                            <ul>
+                                <li><a class="fa fa-facebook" href="javascript:void(0);"></a></li>
+                                <li><a class="fa fa-instagram" href="javascript:void(0);"></a></li>
+                                <li><a class="fa fa-twitter" href="javascript:void(0);"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- END FOOTER -->
+
+
+    <a href="#" class="backToTop cd-top text-replace js-cd-to">
+        <i class="fa fa-angle-up"></i>
+    </a>
+
+    <!-- Thư viện Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- END Thư viện Jquery -->
+
+    <!-- WAYPOINT JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+        integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- COUNT UP -->
+    <script src="./js/jquery.countup.js"></script>
+    <script>
+        // Code gọi count up
+        $('.counter').countUp();
+
+    </script>
+
+    <!-- BACK TO TOP -->
+
+    <script src="./JS/util.js"></script>
+    <script src="./JS/main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Slick JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Gọi thư viện slick để sử dụng -->
+    <script>
+        //viết code js gọi thư viện slick
+        // $('.autoplay'): đi kiếm thẻ html có tên class là "autoplay" sau đó gắn hiệu ứng của slick vào thẻ đó
+
+        $('.services__sliderContent').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            // autoplay: true,
+            // 2000ms = 2s
+            autoplaySpeed: 500,
+            dots: true
+        });
+    </script>
+
+    <!-- Thư viện Owl-Carousel -->
+    <script>
+        $(".slider").owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTime: 2000,
+            autoplayHoverPause: true,
+
+        })
+    </script>
+
+    <script>
+        $(".brand__slider").owlCarousel({
+            // slidesToShow:6,
+            loop: true,
+            autoplay: false,
+            autoplayTime: 2000,
+            autoplayHoverPause: true,
+
+        })
+    </script>
+
+    <!-- LightGallery -->
+    <!-- partial -->
+    <script src='https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/lightgallery.umd.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/plugins/thumbnail/lg-thumbnail.umd.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/plugins/zoom/lg-zoom.umd.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/plugins/fullscreen/lg-fullscreen.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/plugins/autoplay/lg-autoplay.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/plugins/share/lg-share.min.js'></script>
+    <script src="./JS/script.js"></script>
+
+    <!-- Swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+  pagination: {
+    el: ".swiper-pagination"
+  }
+});
+
+var testimonialThumbs = new Swiper(".testimonial-thumbs", {
+  spaceBetween: 10,
+  slidesPerView: 3,
+  centeredSlides: true,
+  freeMode: true,
+  // autoplay: true,
+  loop: true,
+  speed: 3000
+});
+var testimonialContent = new Swiper(".testimonial-comment", {
+  spaceBetween: 10,
+  // autoplay: true,
+  loop: true,
+  speed: 3000,
+  thumbs: {
+    swiper: testimonialThumbs
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  }
+});
+</script>
+
+
+</body>
+
+</html>

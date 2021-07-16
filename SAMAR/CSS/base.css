@@ -1,0 +1,233 @@
+/* GLOBAL */
+
+html,body{   
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+    background-color: #fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --gradient: linear-gradient(to left,#f55f8d 0,#f8ae56 51%,#f55f8d 100%);
+    --gradient__alt: linear-gradient(to right,#f55f8d 0,#f8ae56 51%,#f55f8d 100%);
+    --primary: #7355f7;
+    --rgba-primary-1: rgba(115, 85, 247, 0.1);
+    --rgba-primary-5: rgba(245, 95, 141, 0.5);
+  }
+
+  a {
+    text-decoration: none;
+    outline: none;
+    color: var(--primary);
+    transition: all 1s;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
+	color:#262626;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem; }
+
+  h3, .h3 {
+    font-size: 2rem;
+}
+
+.m-b15 {
+    margin-bottom: 15px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem; }
+
+.bg-white {
+  background-color: #fff !important; }
+
+  .about-wraper-1 .dz-media.left:after {
+    right: -20px;
+    transform: rotate(
+8deg
+);
+    border-radius: 0 100px 100px 0;
+}
+
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.text-primary {
+  color: #f55f8d !important;
+}
+
+.m-l50 {
+  margin-left: 50px;
+}
+.m-r50 {
+  margin-right: 50px;
+}
+
+.m-b30 {
+  margin-bottom: 30px;
+}
+
+section {
+  position: relative;
+  z-index: 1;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+.m-b0 {
+  margin-bottom: 0;
+}
+
+.col-lg-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+  margin-bottom: 30px;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.icon-content {
+  overflow: hidden;
+}
+
+.col-lg-6{
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.cf-r-img {
+  margin-right: -80px;
+}
+
+.la, .las {
+  font-family: 'Line Awesome Free';
+  font-weight: 900;
+}
+
+.la, .lab, .lad, .lal, .lar, .las {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.m-b20 {
+  margin-bottom: 20px;}
+
+  .content-inner-3 {
+    padding-top: 80px;
+    padding-bottom: 50px; }
+
+    .col-lg-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+      position: relative;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+  }
+  
+  .m-b30 {
+      margin-bottom: 30px;
+  }
+
+  .lightimg {
+    cursor: pointer; }
+
+/* Button */
+.btn{
+    padding: 25px 35px;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-image: var(--gradient);
+    background-size: 200%;
+}
+
+.btn:hover{
+    background-position: right, center;
+    background-image: var(--gradient__alt);
+    transition: all 0.5s ease-in-out 0s;
+    cursor: pointer;
+}
+
+
+/* Hiệu ứng menu */ 
+@keyframes upToDown {
+    49% {
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%); }
+    50% {
+      opacity: 0;
+      -webkit-transform: translateY(-100%);
+      transform: translateY(-100%); }
+    51% {
+      opacity: 1; } } 
+
+/* End Hiệu ứng menu */ 
+
+/* Hiệu ứng chuyển động của hình Carousel */ 
+
+@keyframes move2{
+    0% {
+        -webkit-transform: rotate(1deg) translate(2px, 2px);
+        transform: rotate(1deg) translate(2px, 2px); }
+      50% {
+        -webkit-transform: rotate(-1deg) translate(-2px, -2px);
+        transform: rotate(-1deg) translate(-2px, -2px); }
+      100% {
+        -webkit-transform: rotate(1deg) translate(2px, 2px);
+        transform: rotate(1deg) translate(2px, 2px); } }
+
+/* End Hiệu ứng chuyển động của hình Carousel */ 
+
+/* Hiệu ứng hover services */
+
+.icon-bx-wraper:hover {
+  transform: translateY(-15px);
+}
+
+.icon-bx-wraper .icon-content .dlab-title {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 15px;
+  font-size: 1.5625rem;
+  font-weight: 700;
+}
+
+/* End Hiệu ứng hover services */

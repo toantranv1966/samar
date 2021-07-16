@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Gallery</title>
+    <!-- FONT GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- LightGallery -->
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+
+    <div id="animated-thumbnails">
+        <a data-exthumbimage="../SAMAR/images/projects/project-2/pic1.jpg"
+            data-lg-size="2500-2500" class="lightimg"
+            data-src="../SAMAR/images/projects/project-2/pic1.jpg"
+            data-sub-html="Design">
+            <i class="fa fa-image"></i>
+        </a>
+        <a data-exthumbimage="../SAMAR/images/projects/project-2/pic1.jpg"
+            data-lg-size="2500-2500" class="lightimg"
+            data-src="../SAMAR/images/projects/project-2/pic1.jpg"
+            data-sub-html="Design">
+            <i class="fa fa-image"></i>
+        </a>
+    </div>
+
+    <!-- Light Gallery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+    <script>
+        lightGallery(document.getElementById("animated-thumbnails"), {
+            selector: ".lightimg",
+            plugins: [lgZoom, lgThumbnail, lgAutoplay, lgFullscreen, lgShare],
+            alignThumbnails: "left",
+            loop: true,
+            allowMediaOverlap: true,
+            toggleThumb: true,
+            showZoomInOutIcons: true,
+            actualSize: false,
+            exThumbImage: "data-exthumbimage"
+        });
+
+    </script>
+
+
+
+
+</body>
+
+</html>
